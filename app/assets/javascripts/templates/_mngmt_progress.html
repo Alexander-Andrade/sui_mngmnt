@@ -1,0 +1,10 @@
+<div class="progress-description"><i class="{{icon}}" aria-hidden="true"></i>
+    {{data.title}}
+</div>
+<div class="progress progress-label-top-right">
+    <div class="progress-bar">
+        <div class="subbar" style="width: {{data.reserved_pct}}%; background-color: {{barColor1}}; opacity: 0.4;" title="{{data.reserved_pct}}%"></div>
+        <div class="subbar" style="width: {{data.used_pct}}%; background-color: {{barColor2}};  opacity: 0.4;" title="{{data.used_pct}}%"></div>
+        <span><strong>{{data.total*data.reserved_pct|number:0}} from {{data.total.value}} {{data.total.units}}</strong> Used</span>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div resource-breadcrumb list="breadcrumbList"></div>
+<div class="cards-pf">
+    <div class="container-fluid container-cards-pf">
+
+        <div ng-repeat="curType in types" class="row">
+            <div ng-if="hasElemsWithType(data, curType)">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{curType}}s</h3>
+                    </div>
+                </div>
+                <div class="panel-body" style="margin-top: -60px">
+                    <div ng-repeat="elem in data|nodeTypeFilter:curType" ng-class="{'row':$odd,'row-cards-pf':$odd}">
+                        <div class="col-xs-6">
+                            <div mngmt-card node="elem" next-url="nextUrl(node)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

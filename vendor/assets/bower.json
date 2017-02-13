@@ -1,0 +1,13 @@
+{
+  "name": "dsl-generated-dependencies",
+  "dependencies": {
+    "angular": "latest",
+    "angular-ui-router": "latest",
+    "angular-resource": "latest",
+    "angular-bootstrap": "latest",
+    "angular-sanitize": "latest",
+    "angular-animate": "latest",
+    "bootstrap-select": "latest",
+    "pluralize": "latest"
+  }
+}

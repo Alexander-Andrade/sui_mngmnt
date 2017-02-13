@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SuiMngmnt</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="http://www.patternfly.org/components/angular-patternfly/dist/docs/grunt-scripts/angular-sanitize.js"></script>
+    <script src="http://www.patternfly.org/components/angular-patternfly/dist/docs/grunt-scripts/angular-animate.js"></script>
+    <script src="http://www.patternfly.org/components/angular-patternfly/dist/docs/grunt-scripts/ui-bootstrap-tpls.js"></script>
+    <script src="http://www.patternfly.org/components/angular-patternfly/dist/docs/grunt-scripts/angular-bootstrap-prettify.js"></script>
+    <script src="http://www.patternfly.org/components/angular-patternfly/dist/docs/grunt-scripts/lodash.min.js"></script>
+    <script src="http://www.patternfly.org/components/angular-patternfly/dist/docs/grunt-scripts/angular-patternfly.js"></script>
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
