@@ -45,19 +45,13 @@ function nodesHelper ($stateParams) {
         return Array.from(new Set(types));
     };
 
-    this.hasElemsWithType = function (arr, type) {
+    this.elementsOfType = function (arr, type) {
         if(typeof arr === 'undefined' && arr.length === 0){
-            return false;
+            return 0;
         }
         if(type !== undefined) {
-            if (arr.find(function (el) {
-                    return el.type === type;
-                })) {
-                return true;
-            } else {
-                return false;
-            }
+            return arr.filter(function(el){return el.type==type}).length;
         }
-        return true;
+        return arr.length;
     }
 }
